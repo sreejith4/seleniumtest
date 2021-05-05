@@ -17,8 +17,9 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.setProperty("webdriver.chrome.driver","C:\\Edureka\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver","/home/ubuntu/selenium/chromedriver");
         ChromeOptions chromeOptions= new ChromeOptions();
+        chromeOptions.addArguments("--headless");
         WebDriver driver = new ChromeDriver(chromeOptions);
         
         System.out.println("Welcome to demo for selenium chrome webdriver");
